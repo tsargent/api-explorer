@@ -11,9 +11,9 @@
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
     "start": "NODE_ENV=local webpack-dev-server --config webpack.dev.js --mode=development",
-    "validate": "npm-run-all --parallel check-format lint lint:style test build build-storybook",
+    "validate": "npm-run-all --parallel check-format lint test build build-storybook",
     "build": "NODE_ENV=production webpack --config webpack.prod.js --mode=production",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test-watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
