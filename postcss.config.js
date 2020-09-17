@@ -10,6 +10,8 @@ isProduction &&
   plugins.push(
     purgecss({
       content: ['./src/**/*', 'index.html'],
+      defaultExtractor: content =>
+        content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
     }),
   )
 
