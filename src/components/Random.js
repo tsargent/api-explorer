@@ -10,7 +10,7 @@ const Random = () => {
   const entry = data.entries[0]
 
   return (
-    <div className="flex bg-blue-200">
+    <div className="flex">
       <Entry entry={entry} />
     </div>
   )
