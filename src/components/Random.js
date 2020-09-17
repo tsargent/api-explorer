@@ -11,7 +11,7 @@ const Random = () => {
 
   return (
     <div>
-      <h2 className="font-bold text-5xl text-pink-100">Random</h2>
+      <h2 className="font-bold text-xl text-pink-100">Random</h2>
       <div className="flex">
         <Entry entry={entry} />
       </div>

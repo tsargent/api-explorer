@@ -11,14 +11,16 @@ const List = () => {
   if (isLoading) return 'Loading'
 
   return (
-    <div>
-      <h2 className="font-bold text-5xl text-pink-100">{category}</h2>
-      <div className="flex flex-wrap">
+    <>
+      <h2 className="font-bold text-xl text-pink-100">Category: {category}</h2>
+      <div className="flex flex-wrap flex-col py-2 md:flex-row md:-m-2">
         {data.entries.map(entry => (
-          <Entry key={entry.API} entry={entry} className="m-2" />
+          <a href={entry.Link} key={entry.API} className="block mb-4 md:m-2">
+            <Entry key={entry.API} entry={entry} />
+          </a>
         ))}
       </div>
-    </div>
+    </>
   )
 }
 
