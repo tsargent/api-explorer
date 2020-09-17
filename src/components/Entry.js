@@ -1,12 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
-function Entry({entry}) {
+function Entry({entry, className}) {
   return (
-    <div className="shadow-md rounded p-4 bg-pink-100 text-gray-900">
+    <div
+      className={`shadow-md rounded p-4 bg-pink-100 text-gray-900 ${className}`}
+    >
       <h2 className="text-2xl mb-2">{entry.API}</h2>
       <p className="text-xl mb-2">{entry.Description}</p>
-      <p>Category: {entry.Category}</p>
+      <p>
+        Category:{' '}
+        <Link className="text-blue-700" to={`category/${entry.Category}`}>
+          {entry.Category}
+        </Link>
+      </p>
       <p>Auth: {entry.Auth || 'none'}</p>
       <p>HTTPS: {entry.HTTPS.toString()}</p>
       <p className="mb-2">Cors: {entry.Cors}</p>
@@ -21,9 +29,11 @@ function Entry({entry}) {
 
 Entry.defaultProps = {
   Auth: undefined,
+  className: '',
 }
 
 Entry.propTypes = {
+  className: PropTypes.string,
   entry: PropTypes.shape({
     API: PropTypes.string.isRequired,
     Auth: PropTypes.string,
