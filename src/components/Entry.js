@@ -4,9 +4,7 @@ import {Link} from 'react-router-dom'
 
 function Entry({entry}) {
   return (
-    <div
-      className={`shadow-md rounded p-4 bg-pink-100 text-gray-900`}
-    >
+    <div className={`shadow-md rounded p-4 bg-pink-100 text-gray-900`}>
       <h2 className="text-2xl mb-2">{entry.API}</h2>
       <p className="text-xl mb-2">{entry.Description}</p>
       <p>
