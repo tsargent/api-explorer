@@ -56,7 +56,7 @@
     "@testing-library/react": "^11.0.4",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
-    "chromatic": "^5.1.0",
+    "chromatic": "^5.2.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "eslint": "^7.9.0",
