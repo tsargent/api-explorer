@@ -39,7 +39,7 @@
     "react-query-devtools": "^2.4.7",
     "react-router-dom": "^6.0.0-beta.0",
     "regenerator-runtime": "^0.13.5",
-    "tailwindcss": "^1.8.9",
+    "tailwindcss": "^1.8.11",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
