@@ -77,7 +77,7 @@
     "postcss-loader": "^4.0.1",
     "postcss-normalize": "^9.0.0",
     "prettier": "^2.1.1",
-    "purgecss": "^2.3.0",
+    "purgecss": "^4.0.0",
     "react-is": "^16.13.1",
     "style-loader": "^1.2.1",
     "stylelint": "^13.7.1",
