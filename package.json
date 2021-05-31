@@ -33,7 +33,7 @@
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-hook-form": "^6.8.2",
+    "react-hook-form": "^7.7.1",
     "react-hot-loader": "^4.12.21",
     "react-query": "^2.17.2",
     "react-query-devtools": "^2.4.7",
